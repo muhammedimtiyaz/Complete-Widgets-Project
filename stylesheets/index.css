@@ -154,7 +154,7 @@ div, h2, p, form, fieldset, label, input, textarea, span, article, footer, time,
 }
 
 .auto-enter {
-  opacity: 0.5;
+  opacity: 0.01;
   transform: translateY(500%);
 } 
 
@@ -170,7 +170,7 @@ div, h2, p, form, fieldset, label, input, textarea, span, article, footer, time,
 }
 
 .auto-leave.auto-leave-active {
-  opacity: 0.5;
+  opacity: 0.01;
   transform: translateY(500%);
   transition: opacity 700ms ease-in, transform 700ms ease-in;
 }
