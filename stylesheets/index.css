@@ -1,0 +1,186 @@
+html, header, body, nav, h1, a, ul, li, strong, main, button, i, section, img,
+div, h2, p, form, fieldset, label, input, textarea, span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+.clock {
+  font-family: Orbitron;
+  font-size: 28px;
+  background-color: rgb(252 149 10);
+  border: 2px solid black;
+  padding: 10px;
+  /* line-height: 1.7; */
+  width: 550px;
+  height: 94px;
+  COLOR: WHITE;
+  margin: 0 20px 20px 20px;
+}
+
+.clock p {
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-header {
+  width: 200px;
+  height: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between'
+}
+
+.tab-header > li {
+  width: 65px;
+  border-top: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 4px;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightcoral;
+}
+
+.tab-header > li:first-child {
+  border-left: 2px solid black;
+}
+
+.tab-header > li:last-child {
+  border-right: 2px solid black;
+}
+
+.tab-header > li:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.tabs {
+  width: 240px;
+  height: 200px;
+}
+
+.tab-content {
+  font-weight: bold;
+  color: white;
+  height: 192px;
+  margin: 0 20px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsalmon;
+}
+
+.tab-content article {
+  text-align: center;
+}
+
+.weather {
+  font-size: 28px;
+  width: 550px;
+  height: 94px;
+  border: 2px solid black;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightcyan;
+}
+
+.weather p {
+  margin: 8px;
+}
+
+.loading {
+  margin-top: 30px;
+}
+
+.auto {
+  color: black;
+  font-weight: bold;
+  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+  width: 191px;
+  height: 200px;
+  border: 2px solid white;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  /* background-color: lightgray; */
+  background-color: lightblue;
+  /* background-image: url(https://hd.unsplash.com/photo-1445112098124-3e76dd67983c); */
+  background-size: cover;
+  background-position: center;
+}
+
+.auto > * {
+  margin-left: 30px;
+}
+
+.auto input {
+  width: 75%;
+  padding: 2px;
+  margin: 10px 30px 0 30px;
+  border: 2px solid red;
+  border-radius: 2px;
+  background-color: white;
+  color: darkblue;
+}
+
+.auto input:focus {
+  border: 2px solid lightgreen;
+}
+
+.auto li {
+  cursor: pointer;
+  list-style-type: circle;
+}
+
+.auto-enter {
+  opacity: 0.5;
+  transform: translateY(500%);
+} 
+
+.auto-enter.auto-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 700ms ease-in, transform 700ms ease-in;
+}
+
+.auto-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.auto-leave.auto-leave-active {
+  opacity: 0.5;
+  transform: translateY(500%);
+  transition: opacity 700ms ease-in, transform 700ms ease-in;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.interactive {
+  display: flex;
+  justify-content: space-around;
+}
